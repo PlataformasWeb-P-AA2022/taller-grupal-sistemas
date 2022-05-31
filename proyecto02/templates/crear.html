@@ -1,0 +1,38 @@
+{% extends 'master.html' %}
+
+{% block title %} Crear Matricula {% endblock %}
+{% block content %}
+    <h1 style="width: 100%">Agregar docente</h1>
+    <form method="post">
+        <p>
+            <label for="NombrePropietario">NombrePropietario</label>
+            <input type="text" name="NombrePropietario"
+                   placeholder="Ingrese NombrePropietario" required>
+            </input>
+        </p>
+
+        <p>
+            <label for="Placa">Placa</label>
+            <input type="text" name="Placa"
+                   placeholder="Ingrese Placa" required>
+            </input>
+        </p>
+
+        <p>
+            <label for="Anio">Anio</label>
+            <input type="text" name="Anio"
+                   placeholder="Ingrese Anio" required>
+            </input>
+        </p>
+        <p>
+            <label for="Costo">Costo</label>
+            <input type="text" name="Costo"
+                   placeholder="Ingrese Costo" required>
+            </input>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}
